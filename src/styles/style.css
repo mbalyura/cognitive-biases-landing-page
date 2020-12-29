@@ -1,19 +1,25 @@
-:root {
-  --color-white: #FFFFFF;
-  --color-light: #F5F4F0;;
-  --color-dark-50: #908D8B;
-  --color-dark: #2A2626;
-  --color-brown: #B09A81;
-  --color-primary: #FE8A02;
-  --color-primary-dark: #42413C;
-  --color-white-50: #D7CCC0;
+@import url('colors.css');
+
+@font-face {
+  font-family: 'Neucha';
+  src: url('../fonts/Neucha-Regular.ttf');
 }
 
-body {
-  padding: 0;
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+html, body {
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
+  /* box-sizing: border-box; */
+
+  font: 16px/1.6em 'Open Sans', sans-serif;
+  /* font-size: 16px; */
+  /* line-height: 1.6em; */
   color: var(--color-dark);
+
   background: green;
 }
 
@@ -32,4 +38,74 @@ body {
 
 .bg-brown {
   background: var(--color-brown);
+}
+
+.bg-primary {
+  background: var(--color-primary);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: 'Neucha', cursive;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+  position: relative;
+  z-index: 10;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.content {
+  position: relative;
+  max-width: 1110px;
+  padding: 100px 0;
+  margin: auto;
+  /* z-index: 10; */
+}
+
+.bg-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .1;
+}
+
+.main-pic {
+  position: absolute;
+  height: 525px;
+  top: 55px;
+  right: -270px;
+  /* z-index: 1; */
+}
+
+header {
+  /* position: relative; */
+  overflow: hidden;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.mt-200 {
+  margin-top: 200px;
 }
