@@ -52,13 +52,28 @@ li {
   color: var(--color-primary);
 }
 
+.color-dark-50 {
+  color: var(--color-dark-50);
+}
+
+.color-white-50 {
+  color: var(--color-white-50);
+}
+
 .color-white {
   color: var(--color-white);
 }
 
+.color-brown {
+  color: var(--color-brown);
+}
+
 h1,
 h2,
-h3 {
+h3,
+h4,
+.h3,
+.h4 {
   margin: 0;
   font-family: 'Neucha', cursive;
   font-weight: normal;
@@ -75,8 +90,20 @@ h2 {
   font-size: 60px;
 }
 
-h3 {
+h3, .h3 {
   font-size: 34px;
+}
+
+h4, .h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 14px;
+  margin-top: 100px;
+  padding: 5px 10px;
+  margin-bottom: 4px;
+  line-height: 1.2em;
 }
 
 .content {
@@ -107,8 +134,11 @@ h3 {
   right: -270px;
 }
 
-header {
+.relative {
   position: relative;
+}
+
+.overflow-hidden {
   overflow: hidden;
 }
 
@@ -146,12 +176,15 @@ header {
   margin-top: 25px;
   padding: 12px 24px;
   font-weight: bold;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
 .btn:hover {
   background: var(--color-primary-hover);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .ma {
@@ -162,10 +195,13 @@ header {
   text-align: center;
 }
 
+.drop-shadow {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
 .video {
   position: absolute;
   top: 310px;
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 #video > .content {
@@ -223,4 +259,12 @@ header {
 
 .nav-card:hover * {
   color: var(--color-white);
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.p55 {
+  padding: 55px;
 }
