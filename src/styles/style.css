@@ -199,6 +199,7 @@ h5 {
 
 .video {
   position: absolute;
+  border: none;
   top: 330px;
 }
 
